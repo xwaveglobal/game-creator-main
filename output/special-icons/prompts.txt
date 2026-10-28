@@ -1,0 +1,9 @@
+Generated with the built-in image_gen tool. Final JPGs resized to 360 x 360 using Lanczos and encoded at JPEG quality 95.
+
+Shared prompt: Premium square game special-ability icon, full bleed sharp square edges, no rounded corners. Polished sculpted 3D cartoon render, readable at 360x360. Original cute lime-green mascot with huge round head, thick curled green sprout, round ear bumps, chubby body, white gloves and chunky white sneakers, black oval eyes and orange cheeks. Dark navy backdrop, luminous lime highlights, cinematic glow, centered composition and safe margins. No text, numbers, brands, watermark, QR codes, UI, borders, collage or extra characters.
+
+01 Ceiling climb: Mascot upside down with both shoe soles attached to the underside of an overhead tunnel arch, head hanging down. Lime movement trail along ceiling, three-quarter side view, entire mascot visible, cyan accent lighting.
+
+02 Wall climb: Mascot climbing a vertical tunnel wall on the right, hands above shoulders, shoe soles braced against wall, body angled upward, face visible in three-quarter profile. Lime upward movement trail, violet accent lighting, entire mascot visible.
+
+03 Roadster jump: Mascot alone launching in a long forward leap above a gap in a stylized roadway, shoes airborne, knees bent, arms dynamic, happy determined expression. Golden-orange trajectory streak from lower left toward upper right. Road ledges at bottom establish the gap. No vehicle. Lime and amber lighting.

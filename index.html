@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101316"><title>Shadow Rider — 3D Character Studio</title><link rel="stylesheet" href="/src/style.css"></head>
+<body>
+<div class="app">
+  <header><a class="brand" href="#"><span class="brand-icon">S<span>R</span></span><span>SHADOW RIDER<small>CHARACTER LAB / 001</small></span></a><div class="header-right"><span class="live-dot"></span> LIVE 3D <span class="divider"></span><span>WEBGL STUDIO</span></div></header>
+  <main>
+    <section class="stage" aria-label="Khung xem nhân vật 3D">
+      <div id="viewport"></div>
+      <div class="stage-title"><span class="eyebrow">THE CHARACTER COLLECTION</span><h1>Shadow <em>Rider.</em></h1><p>Một bóng đen. Mọi chuyển động.</p></div>
+      <div class="view-tag"><span class="live-dot"></span><span id="view-label">CAMERA GAME</span><span class="tag-separator">/</span><span id="pose-label">LƯỚT THẲNG</span></div>
+      <button id="fullscreen" class="icon-button fullscreen" title="Toàn màn hình" aria-label="Toàn màn hình">⛶</button>
+      <div class="stage-bottom"><div class="drag-hint"><span>↔</span> Kéo để xoay <i>·</i> Cuộn để thu phóng</div><div class="axes"><b>Y</b><span>↑</span><small>X — Z</small></div></div>
+      <div class="loading" id="loading"><span></span> Đang dựng nhân vật…</div>
+      <div class="error" id="error" hidden>Không thể khởi tạo WebGL. Hãy mở bằng trình duyệt có hỗ trợ tăng tốc đồ họa.</div>
+    </section>
+    <aside>
+      <div class="panel-heading"><div><span class="eyebrow">ASSET PREVIEW</span><h2>Nhân vật & ván trượt</h2></div><span class="version">V.01</span></div>
+      <button id="demo" class="demo-button"><span class="play-icon">▶</span><span>Chạy toàn bộ động tác</span><span>↗</span></button>
+      <section class="control-section"><div class="section-heading"><h3>TƯ THẾ</h3><span>01 — 06</span></div><div class="button-grid" id="poses">
+        <button data-pose="ride" class="active"><span>↟</span>Lướt thẳng<kbd>W</kbd></button><button data-pose="crouch"><span>⌄</span>Cúi thấp<kbd>C</kbd></button>
+        <button data-pose="left"><span>↶</span>Rẽ trái<kbd>←</kbd></button><button data-pose="right"><span>↷</span>Rẽ phải<kbd>→</kbd></button>
+        <button data-pose="jump"><span>↥</span>Bật nhảy<kbd>↑</kbd></button><button data-pose="slide"><span>⇣</span>Trượt thấp<kbd>↓</kbd></button>
+      </div></section>
+      <section class="control-section"><div class="section-heading"><h3>GÓC CAMERA</h3><span>360°</span></div><div class="button-grid camera-grid" id="cameras">
+        <button data-camera="game" class="active">Camera game</button><button data-camera="rear">Sau, cận cảnh</button><button data-camera="threequarter">3/4 phía trước</button><button data-camera="front">Chính diện</button><button data-camera="left">Ngang trái</button><button data-camera="right">Ngang phải</button>
+      </div></section>
+      <section class="control-section display-section"><div class="section-heading"><h3>KHÔNG GIAN HIỂN THỊ</h3></div>
+        <label class="switch-row"><span>Đường chạy & bánh xe<small>Chuyển động môi trường</small></span><input id="road" type="checkbox" checked><span class="switch"></span></label>
+        <label class="switch-row"><span>Tự xoay quanh nhân vật</span><input id="rotate" type="checkbox"><span class="switch"></span></label>
+        <label class="switch-row"><span>Khung lưới <small class="inline">Wireframe</small></span><input id="wireframe" type="checkbox"><span class="switch"></span></label>
+      </section>
+      <section class="asset-info"><div class="section-heading"><h3>THÔNG SỐ MÔ HÌNH</h3><span class="status-pill">3D MESH</span></div><div class="stats"><div><span>Tam giác</span><strong id="triangles">—</strong></div><div><span>Mesh</span><strong id="meshes">—</strong></div><div><span>Khớp điều khiển</span><strong id="joints">—</strong></div><div><span>Vật liệu</span><strong id="materials">—</strong></div></div><div class="asset-note"><span>◇</span><p>Mesh 3D dựng bằng code, có khớp chuyển động.<br><strong>Sẵn sàng tích hợp Three.js.</strong></p></div></section>
+      <div class="exports"><button id="export-model">↓ Xuất GLB</button><button id="screenshot">↓ Ảnh PNG</button></div>
+      <footer><span><i></i> PROCEDURAL CHARACTER</span><span id="fps">60 FPS</span></footer>
+    </aside>
+  </main>
+</div><div id="toast" role="status"></div><script type="module" src="/src/main.js"></script>
+</body></html>
